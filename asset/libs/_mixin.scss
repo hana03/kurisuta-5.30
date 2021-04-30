@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+$font-color :#171717;
+
+$white:#fff;
+$ttl-color:#282F35;
+$works-text:#141414;
+$btn-color:#F7D43F;
+$syadow:#1B1310;
+
+@mixin main-ttl {
+    font-size: 6rem;
+    font-style: italics;
+    line-height: 4.0em;
+    letter-spacing: 0.05em;
+    color: $ttl-color;
+}
+@mixin aftter{
+    content: "";
+    width: 200px;
+    height: 8px;
+    background-color: $ttl-color;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+@mixin sub-ttl {
+    font-size: 3rem;
+    line-height: 2em;
+    letter-spacing: 0.10em;
+    margin-bottom: 31px;
+}
+
+@mixin main-text {
+    font-size: 1.6rem;
+    line-height: 0.5em;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+}
+
+@mixin main-ba-bottom{
+    font-size: 9rem;
+    letter-spacing: 0.05em;
+    opacity: .7;
+}
+
+@mixin btn {
+    width: 235px;
+    height: 59px;
+    text-decoration: none;
+    color: $font-color;
+    padding: 20px 100px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: $btn-color;
+}
+
+
+@mixin pc {
+    @media screen and (min-width:1200px) {
+      @content;
+    }
+  }
+  
+  @mixin tb {
+    @media screen and (min-width:900px) {
+      @content;
+    }
+  }
+  
+  @mixin sp {
+    @media screen and (min-width:640px) {
+      @content;
+    }
+  }
