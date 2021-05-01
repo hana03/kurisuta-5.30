@@ -19,6 +19,9 @@
         }
 
         .works-sec {
+            display: flex;
+            flex-direction: column;
+
             .works-list {
                 margin-bottom: 30px;
                 a {
@@ -33,7 +36,10 @@
                     .works-text {
                         background-color: $white;
                         padding: 20px;
-                        text-align: left
+                        text-align: left;
+                        height: 55px;
+                   
+
                     }
                 }
             }
@@ -59,4 +65,22 @@
     background-position: center;
     background-size: cover;
     padding-bottom: 20vw;
+}
+@include tb {
+    .works-wrapper {
+        .inner {
+            .works-sec{
+                flex-direction: row;
+                justify-content: space-between;
+                .works-list{
+                    width: 33.3%;
+                    margin-right: 20px;
+                }
+                .works-list:last-of-type{
+                    margin-right: 0;
+                }
+
+            }
+        }
+        }
 }
