@@ -45,4 +45,8 @@
             }
         }
     }
+    .main-ba-bottom {
+        @include main-ba-bottom;
+        text-align: left;
+    }
 }
