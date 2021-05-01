@@ -277,6 +277,15 @@ input, select {
   margin-bottom: 33px;
 }
 
+.concept-wrapper .inner .sub-ttl .concept-br {
+  display: none;
+}
+
+.concept-wrapper .inner .concept-sec {
+  display: flex;
+  flex-direction: column;
+}
+
 .concept-wrapper .inner .concept-sec .main-text {
   font-size: 1.6rem;
   line-height: 1.8em;
@@ -297,13 +306,33 @@ input, select {
   margin-top: 8vw;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .concept-wrapper .inner {
-    margin: 0;
+    margin: 0 auto;
     width: 1000px;
   }
   .concept-wrapper .inner .main-ttl {
     font-size: 6rem;
+  }
+  .concept-wrapper .inner .sub-ttl {
+    font-size: 2.2rem;
+  }
+  .concept-wrapper .inner .sub-ttl .concept-br {
+    display: block;
+  }
+  .concept-wrapper .inner .concept-sec {
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .concept-wrapper .inner .concept-sec .main-text {
+    align-items: center;
+    align-self: center;
+    width: 45%;
+  }
+  .concept-wrapper .inner .concept-sec img {
+    margin-left: 20px;
+    width: 45%;
   }
 }
 
@@ -333,6 +362,11 @@ input, select {
   background-color: #fff;
 }
 
+.works-wrapper .inner .works-sec {
+  display: flex;
+  flex-direction: column;
+}
+
 .works-wrapper .inner .works-sec .works-list {
   margin-bottom: 30px;
 }
@@ -351,6 +385,7 @@ input, select {
   background-color: #fff;
   padding: 20px;
   text-align: left;
+  height: 55px;
 }
 
 .works-wrapper .inner .works-btn a {
@@ -379,6 +414,20 @@ input, select {
   padding-bottom: 20vw;
 }
 
+@media screen and (min-width: 900px) {
+  .works-wrapper .inner .works-sec {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .works-wrapper .inner .works-sec .works-list {
+    width: 33.3%;
+    margin-right: 20px;
+  }
+  .works-wrapper .inner .works-sec .works-list:last-of-type {
+    margin-right: 0;
+  }
+}
+
 .service-wrapper .main-ttl {
   font-size: 3rem;
   font-style: italic;
@@ -401,6 +450,8 @@ input, select {
 
 .service-wrapper .service-sec {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-wrapper .service-sec .service-list-01 {
@@ -472,6 +523,12 @@ input, select {
   opacity: .3;
   text-align: right;
   text-align: left;
+}
+
+@media screen and (min-width: 900px) {
+  .service-wrapper .service-sec {
+    flex-direction: row;
+  }
 }
 
 .contact-wrapper .inner {
