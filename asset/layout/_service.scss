@@ -16,6 +16,8 @@
 
     .service-sec {
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
 
         .service-list-01 {
             background: url(imge/service-img01@2x.jpg);
@@ -48,5 +50,13 @@
     .main-ba-bottom {
         @include main-ba-bottom;
         text-align: left;
+    }
+}
+@include tb {
+    .service-wrapper{
+        .service-sec{
+            flex-direction: row;
+
+        }
     }
 }
