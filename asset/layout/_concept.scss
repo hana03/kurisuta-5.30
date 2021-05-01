@@ -4,6 +4,7 @@
 
 .concept-wrapper {
     margin-bottom: 20vw;
+
     .inner {
         margin: 0 10px;
         text-align: center;
@@ -16,33 +17,67 @@
         .main-ttl::after {
             @include after;
         }
-        .sub-ttl{
+
+        .sub-ttl {
             @include sub-ttl;
-        }
-        .concept-sec{
-            .main-text{
-                @include main-text;  
-                
+            .concept-br{
+                display: none;
             }
-            img{
+        }
+
+        .concept-sec {
+            display: flex;
+            flex-direction: column;
+
+            .main-text {
+                @include main-text;
+
+            }
+
+            img {
                 width: 100%;
             }
         }
-        .main-ba-bottom{
+
+        .main-ba-bottom {
             @include main-ba-bottom;
             margin-top: 8vw;
         }
     }
 }
 
-@include pc {
+@include tb {
     .concept-wrapper {
         .inner {
-            margin: 0;
+            margin: 0 auto;
             width: 1000px;
 
             .main-ttl {
                 font-size: 6rem;
+            }
+            .sub-ttl{
+                font-size: 2.2rem;
+                .concept-br{
+                    display: block;
+                }
+            }
+
+            .concept-sec {
+                flex-direction: row;
+                margin-top: 50px;
+                justify-content: space-between;
+
+                .main-text {
+                    align-items: center;
+                    align-self: center;
+                    width: 45%;
+
+                }
+
+                img {
+                    margin-left: 20px;
+                    width: 45%;
+                }
             }
         }
     }
