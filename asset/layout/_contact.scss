@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.contact-wrapper {
+    .inner {
+        margin: 0 10px;
+        text-align: center;
+
+        .main-ttl {
+            @include main-ttl;
+            color: $white;
+        }
+
+        .main-ttl::after {
+            @include after;
+            // align-self: center;
+            background-color: $white;
+        }
+
+        .contact-btn {
+            a {
+                @include btn;
+                margin-bottom: 10vw
+
+            }
+        }
+
+        .main-ba-bottom {
+            @include main-ba-bottom;
+            text-align: left;
+        }
+    }
+}
+.ba-img{
+    background: url(imge/contact-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 20vw;
+}
