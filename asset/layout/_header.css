@@ -1,0 +1,13 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header .sp-nav-list {
+  display: none;
+}
+
+.header .pc-nav-list {
+  display: none;
+}
