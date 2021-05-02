@@ -38,3 +38,12 @@
     background-size: cover;
     padding-bottom: 20vw;
 }
+
+@include tb {
+    .contact-wrapper {
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+    }
+}

@@ -226,9 +226,9 @@ input, select {
 
 @media screen and (min-width: 1200px) {
   .key-visual .key-text {
+    width: 1200px;
+    margin: 0 auto;
     text-align: initial;
-    margin-left: 80px;
-    padding-top: 50px;
   }
   .key-visual .key-text .key-ttl {
     font-size: 7.0rem;
@@ -308,8 +308,8 @@ input, select {
 
 @media screen and (min-width: 900px) {
   .concept-wrapper .inner {
-    margin: 0 auto;
     width: 1000px;
+    margin: 0 auto;
   }
   .concept-wrapper .inner .main-ttl {
     font-size: 6rem;
@@ -581,6 +581,13 @@ input, select {
   background-position: center;
   background-size: cover;
   padding-bottom: 20vw;
+}
+
+@media screen and (min-width: 900px) {
+  .contact-wrapper .inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .footer {
