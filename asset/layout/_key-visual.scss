@@ -1,22 +1,32 @@
 @charset "utf-8";
 
-// @import "asset/libs/_mixin.scss";
+@import "asset/libs/_mixin.scss";
+
 .key-visual {
-    background: url(imge/fv-bgi_01@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    min-height: 600px;
-    text-align: center;
-    position: relative;
+
+    .slider{
+        width: 100%;
+        li{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    // background: url(imge/fv-bgi_01@2x.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // min-height: 100vh;
+    // text-align: center;
+    // position: relative;
 
     .key-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 600px;
+        height: 500px;
 
         .key-ttl {
-            font-size: 3.7rem;
+            font-size: 2.7rem;
             letter-spacing: 0.05em;
             line-height: 1.9em;
             color: $white;
@@ -25,33 +35,13 @@
         }
 
         .key-sub-ttl {
-            font-size: 2.8rem;
-            letter-spacing: 0.05em;
-            line-height: 1.9em;
-            color: $white;
-            margin-top: 20px;
-            white-space: nowrap;
+       font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.9em;
+    color: #fff;
+    margin-top: 20px;
+    white-space: nowrap;
         }
-    }
-}
-
-@include pc {
-    .key-visual {
-        .key-text {
-            width: 1200px;
-            margin: 0 auto;
-            text-align: initial;
-            .key-ttl {
-                font-size: 7.0rem;
-            }
-            .key-sub-ttl{
-                font-size: 4.0rem;
-                .key-br {
-                    display: none;
-                }
-            }
-
-        }
-
     }
 }

@@ -4,14 +4,8 @@
 
 .service-wrapper {
 
-
     .main-ttl {
-        @include main-ttl;
-    }
-
-    .main-ttl::after {
-        @include after;
-        align-self: center;
+        text-align: left;
     }
 
     .service-sec {
@@ -25,38 +19,44 @@
 
             a {
                 @include service-list-a;
-
             }
         }
-        .service-list-02{
+
+        .service-list-02 {
             background: url(imge/service-img02@2x.jpg);
             @include service-list;
 
             a {
                 @include service-list-a;
-
             }
         }
-        .service-list-03{
+
+        .service-list-03 {
             background: url(imge/sevice-img03@2x.jpg);
             @include service-list;
 
             a {
                 @include service-list-a;
-
             }
         }
     }
-    .main-ba-bottom {
-        @include main-ba-bottom;
-        text-align: left;
-    }
+  
 }
-@include tb {
-    .service-wrapper{
-        .service-sec{
-            flex-direction: row;
 
+@include tb {
+    .service-wrapper {
+        .inner {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .inner-pc {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-sec {
+            flex-direction: row;
         }
     }
 }

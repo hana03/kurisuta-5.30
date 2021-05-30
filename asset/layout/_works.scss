@@ -3,84 +3,87 @@
 @import "asset/libs/_mixin.scss";
 
 .works-wrapper {
+    background-image: url(imge/works-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+
+    .main-ttl {
+        text-align: right;
+        color: white;
+
+        &:after {
+            background-color: white;
+            width: 200px;
+        }
+    }
+
     .inner {
         margin: 0 10px;
         text-align: center;
 
-        .main-ttl {
-            @include main-ttl;
-            color: $white;
-        }
-
-        .main-ttl::after {
-            @include after;
-            // align-self: center;
-            background-color: $white;
-        }
-
         .works-sec {
             display: flex;
             flex-direction: column;
+            padding: 0 10px;
 
             .works-list {
-                margin-bottom: 30px;
                 a {
-                    color: $font-color;
                     text-decoration: none;
+                    color: $font-color;
+
                     img {
                         width: 100%;
-                        vertical-align: bottom;
-                 
                     }
 
                     .works-text {
-                        background-color: $white;
                         padding: 20px;
-                        text-align: left;
-                        height: 55px;
-                   
+                        background-color: white;
+                        // margin-bottom: 20px;
+                        @include main-text;
+                    }
+                }
+            }
+        }
+    }
 
+    .works-btn {
+        a {
+            @include btn;
+        }
+    }
+
+    .main-ba-bottom {
+        text-align: left;
+    }
+}
+
+@include tb {
+    .works-wrapper {
+        .inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            max-width: 1000px;
+            margin: 0 auto;
+
+            .works-sec {
+                flex-direction: row;
+                padding: 0;
+
+
+                .works-list {
+                    width: 33%;
+                    margin-right: 20px;
+                    &:last-of-type{
+                        margin-right: 0;
                     }
                 }
             }
         }
 
-        .works-btn {
-            a {
-                @include btn;
-                margin-bottom: 10vw
-
-            }
-        }
-
-        .main-ba-bottom {
-            @include main-ba-bottom;
-            text-align: left;
+        .inner-pc {
+            max-width: 1200px;
+            margin: 0 auto;
         }
     }
-}
-
-.ba-img {
-    background: url(imge/works-bgi@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 20vw;
-}
-@include tb {
-    .works-wrapper {
-        .inner {
-            .works-sec{
-                flex-direction: row;
-                justify-content: space-between;
-                .works-list{
-                    width: 33.3%;
-                    margin-right: 20px;
-                }
-                .works-list:last-of-type{
-                    margin-right: 0;
-                }
-
-            }
-        }
-        }
 }

@@ -1,10 +1,16 @@
 @charset "utf-8";
 
-// @import "asset/libs/_mixin.scss";
+@import "asset/libs/_mixin.scss";
 
-.footer{
-    background-color: $white;
-    padding: 4vw 0;
+.footer {
+    background-color: $ttl-color;
+    padding: 20px;
     text-align: center;
 
+    small {
+        
+            color: $white;
+            text-decoration: none;
+       
+    }
 }

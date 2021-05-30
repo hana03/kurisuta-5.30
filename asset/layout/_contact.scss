@@ -3,47 +3,52 @@
 @import "asset/libs/_mixin.scss";
 
 .contact-wrapper {
+    background-image: url(imge/contact-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+
+    padding-bottom: 20px;
     .inner {
         margin: 0 10px;
         text-align: center;
 
         .main-ttl {
-            @include main-ttl;
-            color: $white;
-        }
+            text-align: right;
+            color: white;
 
-        .main-ttl::after {
-            @include after;
-            // align-self: center;
-            background-color: $white;
+            &:after {
+                background-color: white;
+                width: 200px;
+            }
         }
 
         .contact-btn {
             a {
                 @include btn;
-                margin-bottom: 10vw
-
             }
         }
 
-        .main-ba-bottom {
-            @include main-ba-bottom;
-            text-align: left;
+        .sub-ttl {
+            @include sub-ttl;
+            color: white;
         }
     }
+    .main-ba-bottom{
+        text-align: left;
+    }
 }
-.ba-img{
-    background: url(imge/contact-bgi@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 20vw;
-}
-
 @include tb {
-    .contact-wrapper {
+    .contact-wrapper{
+
         .inner {
-            width: 1200px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .inner-pc {
+            max-width: 1200px;
             margin: 0 auto;
         }
     }
+        
 }

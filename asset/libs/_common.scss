@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.main-ttl {
+    @include main-ttl;
+
+    &:after {
+        @include after;
+    }
+}
+
+.main-ba-bottom {
+    @include main-ba-bottom;
+    text-align: right;
+
+    &:nth-child(even) {
+        text-align: left;
+    }
+}
+
+@include tb {
+    .main-ttl {
+        font-size: 6.0rem;
+
+        &::after {
+            width: 200px;
+        }
+    }
+    .main-ba-bottom {
+        @include main-ba-bottom;
+        text-align: right;
+        font-size: 9rem;
+    
+        &:nth-child(even) {
+            text-align: left;
+        }
+    }
+}

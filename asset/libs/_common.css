@@ -1,0 +1,40 @@
+.main-ttl {
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 4.0em;
+  letter-spacing: 0.05em;
+  color: #282F35;
+  margin-bottom: 2vw;
+}
+
+.main-ttl:after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  background-color: #282F35;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.main-ba-bottom {
+  font-size: 4.0rem;
+  letter-spacing: 0.05em;
+  color: #171717;
+  opacity: 0.1;
+  margin: 40px 0;
+  text-align: right;
+}
+
+.main-ba-bottom:nth-child(even) {
+  text-align: left;
+}
+
+@media screen and (min-width: 900px) {
+  .main-ttl {
+    font-size: 6.0rem;
+  }
+  .main-ttl::after {
+    width: 200px;
+  }
+}

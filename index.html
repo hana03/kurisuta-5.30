@@ -9,18 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="inner">
-            <div class="header-logo">Cresta Design</div>
+        <div class="inner-pc">
+            <div class="inner-sp">
+                <h1 class="header-logo">Cresta Design</h1>
+                <i class="fas fa-bars"></i>
+            </div>
 
-            <i class="fas fa-bars"></i>
             <nav class="sp-nav-list">
-                <!-- <i class="fas fa-bars"></i> -->
+                <i class="fas fa-times"></i>
                 <ul>
                     <li><a href="#concept">Concept</a></li>
                     <li><a href="#works">Works</a></li>
@@ -29,7 +33,6 @@
                 </ul>
             </nav><!-- sp-nav-list -->
             <nav class="pc-nav-list">
-
                 <ul>
                     <li><a href="#concept">Concept</a></li>
                     <li><a href="#works">Works</a></li>
@@ -37,23 +40,25 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav><!-- pc-nav-list -->
-        </div>
-    </header>
+        </div><!-- inner-pc -->
+    </header><!-- header -->
 
     <div class="key-visual">
-        <div class="key-text">
+        <!-- <div class="key-text">
             <h3 class="key-ttl">Design for Smile.</h3>
             <h3 class="key-sub-ttl">快適なオフィスを<br class="key-br">デザインする</h3>
-        </div>
+        </div> -->
+
+        <ul class="slider">
+            <li><img src="imge/fv-bgi_01@2x.jpg" alt=""></li>
+            <li><img src="imge/fv-bgi_02@2x.jpg" alt=""></li>
+            <li><img src="imge/fv-bgi_03@2x.jpg" alt=""></li>
+          </ul>
     </div><!-- key-visual -->
 
     <section class="concept-wrapper" id="concept">
         <div class="inner">
             <h2 class="main-ttl">CONCEPT</h2>
-            <div class="">
-
-            </div>
-
             <h3 class="sub-ttl">“働きたくなる空間”をデザインすることで<br class="concept-br">人々を幸せにする。</h3>
 
             <div class="concept-sec">
@@ -63,51 +68,57 @@
                 <img src="imge/concept-image@2x.jpg" alt="オフィスの画像">
             </div><!-- concept-sec -->
 
+            <!-- </div>inner-pc -->
+
+        </div><!-- inner -->
+        <div class="inner-pc">
             <div class="main-ba-bottom">Our Concept</div>
         </div>
-
     </section><!-- concept-wrapper -->
 
-    <section class="works-wrapper ba-img" id="works">
+    <section class="works-wrapper" id="works">
+        <div class="inner-pc">
+        </div>
+        
         <div class="inner">
+                <h2 class="main-ttl">Works</h2>
+                <ul class="works-sec">
+                    <li class="works-list">
+                        <a href="#">
+                            <img src="imge/card-img01@2x.jpg" alt="">
+                            <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </a>
+                    </li><!-- works-list -->
+                    <li class="works-list">
+                        <a href="#">
+                            <img src="imge/card-img02@2x.jpg" alt="">
+                            <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </a>
+                    </li><!-- works-list -->
+                    <li class="works-list">
+                        <a href="#" class="works-list">
+                            <img src="imge/card-img03@2x.jpg" alt="">
+                            <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </a>
+                    </li><!-- works-list -->
+                </ul><!-- works-sec -->
 
-            <h2 class="main-ttl">Works</h2>
-            <ul class="works-sec">
-                <li class="works-list">
-                    <a href="#">
-                        <img src="imge/card-img01@2x.jpg" alt="">
-                        <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                    </a>
-                </li><!-- works-list -->
-                <li class="works-list">
-                    <a href="#">
-                        <img src="imge/card-img02@2x.jpg" alt="">
-                        <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
-                    </a>
-                </li><!-- works-list -->
-                <li class="works-list">
-                    <a href="#" class="works-list">
-                        <img src="imge/card-img03@2x.jpg" alt="">
-                        <p class="works-text">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
-                    </a>
-                </li><!-- works-list -->
-            </ul><!-- works-sec -->
+                <div class="works-btn">
+                    <a href="#">View more</a>
+                </div><!-- works-btn -->
+            </div><!-- inner -->
 
-            <div class="works-btn">
-                <a href="#">more</a>
-            </div><!-- works-btn -->
-
+            <div class="inner-pc">
             <div class="main-ba-bottom">Our Works</div>
-        </div><!-- inner -->
-
+        </div><!-- inner-pc -->
     </section><!-- works-wrapper -->
 
     <section class="service-wrapper" id="service">
-        <!-- <div class="inner"> -->
-        <h2 class="main-ttl">Service</h2>
+        <div class="inner">
+            <h2 class="main-ttl">Service</h2>
+        </div>
 
         <ul class="service-sec">
-
             <li class="service-list-01">
                 <a href="">Hearing</a>
             </li><!-- service-list -->
@@ -118,27 +129,30 @@
                 <a href="">Direction</a>
             </li><!-- service-list -->
         </ul><!-- service-sec -->
-
-        <div class="main-ba-bottom">Our Service</div>
-        <!-- </div> -->
+        <div class="inner-pc">
+            <div class="main-ba-bottom">Our Service</div>
+        </div>
     </section><!-- service-wrapper -->
 
     <section class="contact-wrapper ba-img" id="contact">
         <div class="inner">
             <h2 class="main-ttl">Contact</h2>
 
-            <p>お気軽にご相談ください。</p>
+            <p class="sub-ttl">お気軽にご相談ください。</p>
             <div class="contact-btn">
                 <a href="#">Contact</a>
             </div>
+        </div><!-- inner -->
+        <div class="inner-pc">
             <div class="main-ba-bottom">Contact us</div>
-        </div>
-
+        </div><!-- inner-pc -->
     </section><!-- contact-wrapper -->
 
     <footer class="footer">
         <small>&copy; cresta.design all rights reserved</small>
     </footer>
+
+    <script src="js/slick.min.js"></script>
     <script src="js/sqript.js"></script>
 </body>
 
