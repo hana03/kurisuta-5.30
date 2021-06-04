@@ -179,7 +179,7 @@ input, select {
 
 @media screen and (min-width: 900px) {
   .header .inner-pc {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -187,21 +187,22 @@ input, select {
   .header .inner-pc .fa-bars {
     display: none;
   }
-  .header .inner-pc .pc-nav-list {
+  .header .pc-nav-list {
     display: block;
   }
-  .header .inner-pc .pc-nav-list ul {
+  .header .pc-nav-list ul {
     display: flex;
   }
-  .header .inner-pc .pc-nav-list ul li {
+  .header .pc-nav-list ul li {
     height: 60px;
     padding: 0 30px;
   }
-  .header .inner-pc .pc-nav-list ul li a {
+  .header .pc-nav-list ul li a {
     color: white;
     text-decoration: none;
     height: 60px;
     line-height: 60px;
+    font-size: 2.4rem;
   }
 }
 
@@ -310,16 +311,15 @@ input, select {
 
 .works-wrapper .main-ttl {
   text-align: right;
-  color: white;
+  color: #fff;
 }
 
 .works-wrapper .main-ttl:after {
-  background-color: white;
+  background-color: #fff;
 }
 
 .works-wrapper .inner {
   margin: 0 10px;
-  text-align: center;
 }
 
 .works-wrapper .inner .works-sec {
@@ -336,20 +336,25 @@ input, select {
 
 .works-wrapper .inner .works-sec .works-list a img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 .works-wrapper .inner .works-sec .works-list a .works-text {
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
   font-size: 1.5rem;
   line-height: 2.7rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
 
+.works-wrapper .works-btn {
+  text-align: center;
+}
+
 .works-wrapper .works-btn a {
   display: inline-block;
-  width: 210px;
+  width: 80%;
   height: 60px;
   line-height: 60px;
   background-color: #F7D43F;
@@ -357,7 +362,6 @@ input, select {
   font-size: 2.4rem;
   color: #171717;
   border-radius: 30px;
-  width: 80%;
 }
 
 .works-wrapper .main-ba-bottom {
@@ -365,18 +369,15 @@ input, select {
 }
 
 @media screen and (min-width: 900px) {
-  .works-wrapper .main-ttl:after {
-    width: 200px;
-  }
   .works-wrapper .inner {
     max-width: 1000px;
     margin: 0 auto;
-    max-width: 1000px;
-    margin: 0 auto;
+  }
+  .works-wrapper .inner .main-ttl:after {
+    width: 200px;
   }
   .works-wrapper .inner .works-sec {
     flex-direction: row;
-    padding: 0;
   }
   .works-wrapper .inner .works-sec .works-list {
     width: 33%;
@@ -384,6 +385,9 @@ input, select {
   }
   .works-wrapper .inner .works-sec .works-list:last-of-type {
     margin-right: 0;
+  }
+  .works-wrapper .inner .works-btn a {
+    width: 320px;
   }
   .works-wrapper .inner-pc {
     max-width: 1200px;
@@ -506,7 +510,7 @@ input, select {
 
 .contact-wrapper .inner .contact-btn a {
   display: inline-block;
-  width: 210px;
+  width: 80%;
   height: 60px;
   line-height: 60px;
   background-color: #F7D43F;
@@ -534,17 +538,8 @@ input, select {
     max-width: 1000px;
     margin: 0 auto;
   }
-  .contact-wrapper .inner .main-ttl {
-    text-align: right;
-    color: white;
-  }
-  .contact-wrapper .inner .main-ttl:after {
-    background-color: white;
-    width: 200px;
-  }
-  .contact-wrapper .inner-pc {
-    max-width: 1200px;
-    margin: 0 auto;
+  .contact-wrapper .inner .contact-btn a {
+    width: 320px;
   }
 }
 
@@ -714,7 +709,7 @@ input, select {
   text-align: left;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .main-ttl {
     font-size: 6.0rem;
   }

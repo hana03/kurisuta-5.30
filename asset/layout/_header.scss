@@ -10,11 +10,10 @@
     height: 60px;
 
     .inner-pc {
-
         .inner-sp {
             display: flex;
             justify-content: space-between;
-            padding:0 16px;
+            padding: 0 16px;
             align-items: center;
             height: 60px;
 
@@ -26,7 +25,6 @@
                     text-decoration: none;
                     height: 60px;
                     line-height: 50px;
-
                 }
             }
 
@@ -52,7 +50,6 @@
             }
 
             ul {
-
                 height: 100vh;
                 background-color: #282F35;
                 text-align: center;
@@ -71,7 +68,6 @@
                 }
             }
         }
-
     }
 
     .pc-nav-list {
@@ -80,12 +76,10 @@
 
 }
 
-
 @include tb {
     .header {
-
         .inner-pc {
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -93,23 +87,24 @@
             .fa-bars {
                 display: none;
             }
+        }
 
-            .pc-nav-list {
-                display: block;
+        .pc-nav-list {
+            display: block;
 
-                ul {
-                    display: flex;
+            ul {
+                display: flex;
 
-                    li {
+                li {
+                    height: 60px;
+                    padding: 0 30px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
                         height: 60px;
-                        padding: 0 30px;
-
-                        a {
-                            color: white;
-                            text-decoration: none;
-                            height: 60px;
-                            line-height: 60px;
-                        }
+                        line-height: 60px;
+                        font-size: 2.4rem;
                     }
                 }
             }

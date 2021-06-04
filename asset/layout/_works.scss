@@ -11,17 +11,15 @@
 
     .main-ttl {
         text-align: right;
-        color: white;
+        color: $white;
 
         &:after {
-            background-color: white;
-            // width: 200px;
+            background-color: $white;
         }
     }
 
     .inner {
         margin: 0 10px;
-        text-align: center;
 
         .works-sec {
             display: flex;
@@ -36,11 +34,12 @@
 
                     img {
                         width: 100%;
+                        vertical-align: bottom;
                     }
 
                     .works-text {
                         padding: 20px;
-                        background-color: white;
+                        background-color: $white;
                         @include main-text;
                     }
                 }
@@ -49,10 +48,10 @@
     }
 
     .works-btn {
+        text-align: center;
+
         a {
             @include btn;
-            width: 80%;
-
         }
     }
 
@@ -63,21 +62,19 @@
 
 @include tb {
     .works-wrapper {
-        .main-ttl {
-            &:after {
-                width: 200px;
-            }
-        }
-
         .inner {
             max-width: 1000px;
             margin: 0 auto;
-            max-width: 1000px;
-            margin: 0 auto;
+
+            .main-ttl {
+                &:after {
+                    width: 200px;
+                }
+            }
 
             .works-sec {
                 flex-direction: row;
-                padding: 0;
+                // padding: 0;
 
                 .works-list {
                     width: 33%;
@@ -86,6 +83,12 @@
                     &:last-of-type {
                         margin-right: 0;
                     }
+                }
+            }
+
+            .works-btn {
+                a {
+                    width: 320px;
                 }
             }
         }

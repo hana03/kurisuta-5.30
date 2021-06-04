@@ -3,9 +3,9 @@
 $font-color :#171717;
 $white:#fff;
 $ttl-color:#282F35;
-$works-text:#141414;
 $btn-color:#F7D43F;
 $syadow:#1B1310;
+// $works-text:#141414;
 
 @mixin main-ttl {
   font-size: 3.6rem;
@@ -30,7 +30,6 @@ $syadow:#1B1310;
 @mixin sub-ttl {
   font-size: 1.8rem;
   line-height: 1.5em;
-  // letter-spacing: 0.05em;
   margin-bottom: 33px;
 }
 
@@ -44,7 +43,7 @@ $syadow:#1B1310;
 
 @mixin btn {
   display: inline-block;
-  width: 210px;
+  width: 80%;
   height: 60px;
   line-height: 60px;
   background-color: #F7D43F;
