@@ -3,14 +3,13 @@
 @import "asset/libs/_mixin.scss";
 
 .footer {
-    background-color: $ttl-color;
+    background-color: $white;
     padding: 20px;
     text-align: center;
 
     small {
-        
-            color: $white;
+        font-size: 1.4rem;
+            // color: $white;
             text-decoration: none;
-       
     }
 }
