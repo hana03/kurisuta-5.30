@@ -19,6 +19,8 @@
         .concept-sec {
             .main-text {
                 @include main-text;
+                text-align: left;
+                margin-bottom: 66px;
             }
 
             img {

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.works-artical{
+    img{
+        width: 100%;
+    }
+
+    .main-sub-ttl {
+        @include main-sub-ttl;
+        border-left: 2px solid $syadow;
+        padding: 3px 0 3px 5px;
+        background-color: #fdefe0;
+    }
+
+    .main-text {
+        margin: 0px 0px 20px 13px;
+        @include main-text;
+
+        .text-br {
+            margin-bottom: 10px;
+        }
+    }
+    .h4-ttl{
+        @include h4-ttl;
+        margin-left: 13px;
+        margin-bottom: 0;
+    }
+}

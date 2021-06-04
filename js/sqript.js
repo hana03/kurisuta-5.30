@@ -20,9 +20,10 @@ $('.fa-times').on('click', function () {
 
 $('.slider').slick({
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2500,
     // autoplaySpeed: 1000,
-    speed: 1000,
+    speed: 2000,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    arrows: false,
   });
