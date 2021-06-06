@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.inner-main {
+    .single-contact-wrapper {
+        margin: 0 20px;
+        .sub-ttl{
+            @include sub-ttl;
+            margin-bottom: 10px;
+        }
+
+        .check-list{
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 20px;
+            li{
+                padding-right: 10px;
+            }
+        }
+
+        .label {
+            font-size: 1.8rem;
+            display: block;
+            width: 100%;
+            margin-bottom: 18px;
+
+            .input {
+                width: 94%;
+                padding: 10px;
+            }
+
+            .contact-name {
+                display: inline-block;
+                width: 110px;
+                letter-spacing: 2px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .message {
+            display: inline-block;
+            width: 110px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            font-size: 1.8rem;
+        }
+
+        textarea {
+            width: 98%;
+            height: 80px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .contact-btn {
+        text-align: center;
+        margin: 70px 0 100px 0;
+
+        a {
+            @include btn;
+        }
+    }
+
+    // .works-footer{
+    //     background-color: #282F35;
+    //     color: $white;
+    // }
+}
+
+@include tb {
+    .inner-main {
+        .single-contact-wrapper {
+            width: 800px;
+            margin: 0 auto;
+
+            textarea {
+                width: 96%;
+            }
+        }
+
+        .contact-btn {
+            a {
+                width: 320px;
+            }
+        }
+    }
+}
