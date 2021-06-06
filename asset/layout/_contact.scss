@@ -10,7 +10,7 @@
     padding-bottom: 20px;
 
     .inner {
-        margin: 0 10px;
+        padding: 0 10px;
         text-align: center;
 
         .main-ttl {
@@ -48,25 +48,29 @@
             max-width: 1000px;
             margin: 0 auto;
 
-            // .main-ttl {
-            //     text-align: right;
-            //     color: $white;
+            .main-ttl {
+                text-align: right;
+                color: $white;
 
-            //     &:after {
-            //         background-color: $white;
-            //         width: 200px;
-            //     }
-            // }
+                &:after {
+                    background-color: $white;
+                    width: 200px;
+                }
+            }
+            .sub-ttl{
+                font-size: 3.0rem;
+            }
             .contact-btn {
                 a {
                     width: 320px;
                 }
             }
         }
-
-        // .inner-pc {
-        //     max-width: 1200px;
-        //     margin: 0 auto;
-        // }
+    }
+}
+@include pc {
+    .inner-pc {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
