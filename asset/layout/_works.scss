@@ -92,10 +92,12 @@
                 }
             }
         }
+    }
+}
 
-        .inner-pc {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+@include pc {
+    .inner-pc {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
