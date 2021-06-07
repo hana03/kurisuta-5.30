@@ -5,6 +5,7 @@ $white:#fff;
 $ttl-color:#282F35;
 $btn-color:#F7D43F;
 $syadow:#1B1310;
+$green:#5e9b84;
 // $works-text:#141414;
 
 @mixin main-ttl {
@@ -37,7 +38,7 @@ $syadow:#1B1310;
   font-size: 1.6rem;
   line-height: 1.8em;
   letter-spacing: 0.05em;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   text-align: left;
 }
 
@@ -50,12 +51,10 @@ $syadow:#1B1310;
   text-decoration: none;
   font-size: 2.4rem;
   color: #171717;
-  // border-radius: 100vh;
   border-radius: 30px;
 }
 
 @mixin main-ba-bottom {
-  // font-size: 9rem; 
   font-size: 4.0rem;
   letter-spacing: 0.05em;
   color: #171717;
@@ -83,15 +82,6 @@ $syadow:#1B1310;
   font-style: italic;
 }
 
-@mixin single-main-ttl {
-  font-size: 2.6rem;
-  font-style: italic;
-  line-height: 4.0em;
-  letter-spacing: 0.05em;
-  color: $white;
-  margin-bottom: 2vw;
-}
-
 @mixin h4-ttl {
   font-size: 2.0rem;
   line-height: 1.8em;
@@ -99,19 +89,78 @@ $syadow:#1B1310;
   margin-bottom: 20px;
 }
 
-@mixin main-text {
-  font-size: 1.5rem;
-  line-height: 2.7rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 20px;
-}
-
 @mixin main-sub-ttl {
   font-size: 2.0rem;
-  line-height: 1.6em;
+  line-height: 4.0em;
   letter-spacing: 0.05em;
-  margin-bottom: 14px;
+  padding-top: 50px;
 }
+
+@mixin link-text-a{
+  color: $green;
+  display: inline-block;
+}
+
+@mixin link-text-fa{
+  padding-left: 4px;
+  vertical-align: middle;
+}
+
+@mixin link-text-hov{
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@mixin single-main-ttl{
+  // margin: 73px 0 15px;
+  font-size: 4.0rem;
+  line-height: 4.0rem;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  color:$white ;
+  padding: 80px 0 0 20px;
+}
+
+@mixin single-ttl-h1{
+  font-size: 1.8rem;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  color:$ttl-color;
+  margin: 10px 0 20px 0;
+}
+
+@mixin single-ttl-h2{
+  font-size: 2.2rem;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  color:$ttl-color;
+  background-color: #E4E2DB;
+  // padding: 50px 0 3px 0;
+  margin:80px 0 14px 0;
+  padding:6px 0 6px 3px;
+}
+
+@mixin single-ttl-h3{
+  font-size: 1.6rem;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  color:$ttl-color;
+  border-left:solid 2px $ttl-color ;
+  padding: 8px 0 7px 14px;
+  // margin-bottom: 10px;
+  margin: 3.5em 0 1.8em 0;
+}
+
+@mixin single-ttl-h4{
+  font-size: 1.6rem;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  color:$ttl-color;
+  border-bottom:solid 2px $ttl-color ;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 
 @mixin pc {
   @media screen and (min-width:1200px) {

@@ -4,27 +4,17 @@
 
 .key-visual {
     padding-top: 60px;
-    
 
     .slider {
-
-
         li {
             img {
                 width: 100%;
-
             }
         }
-        .slick-next{
+
+        .slick-next {
             display: none;
         }
-
-        // background: url(imge/fv-bgi_01@2x.jpg);
-        // background-position: center;
-        // background-size: cover;
-        // min-height: 100vh;
-        // text-align: center;
-        // position: relative;
 
         .key-text {
             display: flex;
@@ -46,7 +36,7 @@
                 font-weight: 300;
                 letter-spacing: 0.05em;
                 line-height: 1.9em;
-                color: #fff;
+                color: $white;
                 margin-top: 20px;
                 white-space: nowrap;
             }

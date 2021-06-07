@@ -13,7 +13,7 @@
         .inner-sp {
             display: flex;
             justify-content: space-between;
-            padding: 0 16px;
+            padding: 0 20px;
             align-items: center;
             height: 60px;
 
@@ -78,9 +78,9 @@
 
 @include tb {
     .header {
+        width: 100%;
         .inner-pc {
-            max-width: 1200px;
-            margin: 0 auto;
+         
             display: flex;
             justify-content: space-between;
 
@@ -109,5 +109,11 @@
                 }
             }
         }
+    }
+}
+
+@include pc {
+    .inner-pc {
+        max-width: 1200px;
     }
 }
