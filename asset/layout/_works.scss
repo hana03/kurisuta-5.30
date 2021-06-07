@@ -7,25 +7,25 @@
     background-position: center;
     background-size: cover;
     min-height: 500px;
+    padding-bottom: 10px;
 
     .main-ttl {
         text-align: right;
-        color: white;
+        color: $white;
 
         &:after {
-            background-color: white;
-            width: 200px;
+            background-color: $white;
         }
     }
 
     .inner {
         margin: 0 10px;
-        text-align: center;
 
         .works-sec {
             display: flex;
             flex-direction: column;
-            padding: 0 10px;
+            list-style-type: none;
+            margin-bottom: 60px;
 
             .works-list {
                 a {
@@ -34,12 +34,12 @@
 
                     img {
                         width: 100%;
+                        vertical-align: bottom;
                     }
 
                     .works-text {
                         padding: 20px;
-                        background-color: white;
-                        // margin-bottom: 20px;
+                        background-color: $white;
                         @include main-text;
                     }
                 }
@@ -48,6 +48,8 @@
     }
 
     .works-btn {
+        text-align: center;
+
         a {
             @include btn;
         }
@@ -63,27 +65,39 @@
         .inner {
             max-width: 1000px;
             margin: 0 auto;
-            max-width: 1000px;
-            margin: 0 auto;
+
+            .main-ttl {
+                &:after {
+                    width: 200px;
+                }
+            }
 
             .works-sec {
                 flex-direction: row;
-                padding: 0;
-
+                // padding: 0;
 
                 .works-list {
                     width: 33%;
                     margin-right: 20px;
-                    &:last-of-type{
+
+                    &:last-of-type {
                         margin-right: 0;
                     }
                 }
             }
-        }
 
-        .inner-pc {
-            max-width: 1200px;
-            margin: 0 auto;
+            .works-btn {
+                a {
+                    width: 320px;
+                }
+            }
         }
+    }
+}
+
+@include pc {
+    .inner-pc {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }

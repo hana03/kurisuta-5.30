@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.single-ttl-h1 {
+    @include single-ttl-h1;
+}
+
+.single-ttl-h2 {
+    @include single-ttl-h2;
+}
+
+.single-ttl-h3 {
+    @include single-ttl-h3;
+}
+
+.single-ttl-h4 {
+    @include single-ttl-h4;
+}
+
+
+
+.single-page-sec {
+
+    // margin: 0 10px;
+    .tag {
+        font-size: 1.4rem;
+        padding: 2px 6px;
+        border-radius: 2px;
+        background-color: skyblue;
+    }
+
+    .single-page-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .single-page-text {
+        margin: 10px 0;
+
+        .main-text {
+            @include main-text;
+            margin-bottom: 10px;
+        }
+
+        .contents-list {
+            max-width: 100%;
+            margin-top: 20px;
+            list-style-type: none;
+            border: solid 2px $green;
+            border-radius: 3px;
+            padding: 14px;
+
+            .h4-ttl {
+                @include h4-ttl;
+                text-decoration: underline $green;
+                margin-bottom: 10px;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $green;
+                    font-size: 1.5rem;
+                    line-height: 2.7rem;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        @include link-text-hov;
+                    }
+                }
+            }
+        }
+
+        // }
+    }
+
+    .main-sub-ttl {
+        @include main-sub-ttl;
+        padding-top: 50px;
+    }
+
+    .main-text {
+        margin-bottom: 10px;
+        @include main-text;
+
+        .text-br {
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-sub-ttl04 {
+        @include h4-ttl;
+        border-left: 2px solid $syadow;
+        padding: 10px 2px
+    }
+}
+
+@include tb {
+    .inner-main {
+        width: 1000px;
+        margin: 0 auto;
+
+        .single-page-sec {
+            width: 1000px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@include pc {}

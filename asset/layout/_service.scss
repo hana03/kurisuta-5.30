@@ -3,9 +3,12 @@
 @import "asset/libs/_mixin.scss";
 
 .service-wrapper {
+    .inner {
+        padding: 0 10px;
 
-    .main-ttl {
-        text-align: left;
+        .main-ttl {
+            text-align: left;
+        }
     }
 
     .service-sec {
@@ -40,7 +43,6 @@
             }
         }
     }
-  
 }
 
 @include tb {

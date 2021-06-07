@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.shingle-key-visual {
+    background-image: url(imge/contact-page-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+
+    .single-main-ttl {
+        @include single-main-ttl;
+        padding: 80px 0 0 10px;
+    }
+}
+
+.bg-color {
+    background-color: #f1f0f0;
+
+    .inner-main {
+        padding: 10px;
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            margin: 20px 0;
+
+
+            li {
+                padding-right: 10px;
+
+                a {
+                    @include link-text-a;
+
+                    .fa-angle-double-right,
+                    .fa-external-link-alt {
+                        @include link-text-fa;
+                    }
+
+                    &:hover {
+                   @include  link-text-hov;
+                    }
+                }
+
+                .fa-angle-right {
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .works-sec {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+
+            .works-list {
+                a {
+                    text-decoration: none;
+                    color: $font-color;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .works-text {
+                        padding: 20px;
+                        background-color: $white;
+                        // margin-bottom: 20px;
+                        @include main-text;
+                    }
+                }
+            }
+        }
+    }
+}
+.single-footer{
+    background-color: #282F35;
+    color: $white;
+}
+
+@include tb {
+
+    .shingle-key-visual {
+        padding: 125px 0;
+        margin-bottom: 20px;
+
+        .single-main-ttl {
+            font-size: 6.0rem;
+        }
+    }
+
+    .bg-color {
+        .inner-main {
+            margin: 0;
+
+            .works-sec {
+                flex-direction: row;
+            }
+
+            .works-sec {
+                flex-direction: row;
+                margin: 50px 0 100px 0;
+
+                .works-list {
+                    margin-right: 20px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include pc {
+    .shingle-key-visual {
+        padding: 125px 0;
+
+        .inner {
+            width: 1200px;
+            margin: 0 auto;
+        }
+    }
+
+    .bg-color {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        .inner-main {
+            width: 1100px;
+            margin: 0 auto;
+        }
+    }
+  
+}
