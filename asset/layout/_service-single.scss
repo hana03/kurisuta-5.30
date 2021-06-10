@@ -4,7 +4,6 @@
 
 .single-service-sec {
     .service-sec {
-
         .single-main-ttl {
             margin-top: 80px;
             @include single-main-ttl;
@@ -30,7 +29,7 @@
                 background-color: $white;
                 display: flex;
                 flex-direction: column;
-                padding: 20px;
+                padding: 30px;
 
                 .box-ttl {
                     display: flex;
@@ -52,6 +51,9 @@
                     @include main-text;
                 }
             }
+            .main-ba-bottom{
+                margin-top: 100px;
+            }
         }
     }
 }
@@ -61,10 +63,19 @@
         .service-sec {
             .service-flex {
                 flex-direction: row;
+                justify-content: space-between;
 
-                &:last-child {
-                    background-color: tomato;
+                img {
+                    width: 48%;
                 }
+
+                // .sev-right {
+                //     width: 48%;
+                // }
+
+            }
+            .service-reverse {
+                flex-direction: row-reverse;
             }
         }
     }

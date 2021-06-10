@@ -22,6 +22,10 @@
 
             a {
                 @include service-list-a;
+
+                &:hover {
+                    background-color: rgba(19, 18, 18, 0.3);
+                }
             }
         }
 
@@ -31,6 +35,10 @@
 
             a {
                 @include service-list-a;
+
+                &:hover {
+                    background-color: rgba(19, 18, 18, 0.3);
+                }
             }
         }
 
@@ -40,6 +48,10 @@
 
             a {
                 @include service-list-a;
+
+                &:hover {
+                    background-color: rgba(19, 18, 18, 0.3);
+                }
             }
         }
     }
