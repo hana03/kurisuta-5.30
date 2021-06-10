@@ -7,10 +7,11 @@
     background-position: center;
     background-size: cover;
     max-width: 100%;
+    padding-top: 20px;
 
     .single-main-ttl {
         @include single-main-ttl;
-        padding: 80px 0 0 10px;
+        // padding: 80px 0 0 10px;
     }
 }
 
@@ -31,6 +32,9 @@
 
                 a {
                     @include link-text-a;
+                    .fa-home{
+                        margin-right: 3px
+                    }
 
                     .fa-angle-double-right,
                     .fa-external-link-alt {
@@ -38,7 +42,7 @@
                     }
 
                     &:hover {
-                   @include  link-text-hov;
+                        @include link-text-hov;
                     }
                 }
 
@@ -69,12 +73,17 @@
                         // margin-bottom: 20px;
                         @include main-text;
                     }
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
             }
         }
     }
 }
-.single-footer{
+
+.single-footer {
     background-color: #282F35;
     color: $white;
 }
@@ -119,13 +128,13 @@
         padding: 125px 0;
 
         .inner {
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
         }
     }
 
     .bg-color {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
         margin-bottom: 20px;
 
@@ -134,5 +143,4 @@
             margin: 0 auto;
         }
     }
-  
 }

@@ -28,9 +28,12 @@
             margin-bottom: 60px;
 
             .works-list {
+                margin-bottom: 20px;
+
                 a {
                     text-decoration: none;
                     color: $font-color;
+                    // display: inline-block;
 
                     img {
                         width: 100%;
@@ -42,6 +45,10 @@
                         background-color: $white;
                         @include main-text;
                     }
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
             }
         }
@@ -52,6 +59,10 @@
 
         a {
             @include btn;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 
@@ -74,11 +85,11 @@
 
             .works-sec {
                 flex-direction: row;
-                // padding: 0;
 
                 .works-list {
                     width: 33%;
                     margin-right: 20px;
+                    margin-bottom: 0px;
 
                     &:last-of-type {
                         margin-right: 0;

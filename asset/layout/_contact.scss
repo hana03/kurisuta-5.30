@@ -25,7 +25,11 @@
         .contact-btn {
             a {
                 @include btn;
-                width: 80%
+                width: 80%;
+                &:hover{
+                    opacity: 0.7;
+                }
+                
             }
         }
 

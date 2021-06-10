@@ -13,9 +13,11 @@
         .check-list{
             list-style-type: none;
             display: flex;
+            flex-direction: column;
             margin-bottom: 20px;
             li{
                 padding-right: 10px;
+                margin-bottom: 10px;
             }
         }
 
@@ -51,7 +53,6 @@
             height: 80px;
             margin-bottom: 30px;
         }
-
     }
 
     .contact-btn {
@@ -62,18 +63,20 @@
             @include btn;
         }
     }
-
-    // .works-footer{
-    //     background-color: #282F35;
-    //     color: $white;
-    // }
 }
 
 @include tb {
     .inner-main {
         .single-contact-wrapper {
-            width: 800px;
+            // width: 800px;
             margin: 0 auto;
+            .check-list{
+            flex-direction: row;
+                li{
+                    margin-bottom: 0;
+                }
+            }
+    
 
             textarea {
                 width: 96%;
