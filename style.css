@@ -521,6 +521,7 @@ input, select {
   }
   .service-wrapper .service-sec {
     flex-direction: row;
+    margin-bottom: 100px;
   }
 }
 
@@ -738,16 +739,16 @@ input, select {
     padding: 125px 0;
   }
   .shingle-key-visual .inner {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
   }
   .bg-color {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
   .bg-color .inner-main {
-    width: 1100px;
+    width: 900px;
     margin: 0 auto;
   }
 }
@@ -1088,15 +1089,19 @@ input, select {
 }
 
 @media screen and (min-width: 900px) {
-  .inner-main .single-page-sec .single-page-text {
+  .single-page-sec .single-page-text {
     margin: 30px 0 10px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .inner-main .single-page-sec {
-    width: 1000px;
+  .single-page-sec {
+    width: 900px;
     margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .single-page-text {
+    margin: 0;
   }
 }
 
