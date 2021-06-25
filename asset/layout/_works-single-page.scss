@@ -21,7 +21,6 @@
 
 .single-page-sec {
 
-    // margin: 0 10px;
     .tag {
         font-size: 1.4rem;
         padding: 2px 6px;
@@ -86,6 +85,14 @@
         .text-br {
             margin-bottom: 10px;
         }
+
+        a {
+            @include link-text-a;
+
+            &:hover {
+                @include link-text-hov;
+            }
+        }
     }
 
     .main-sub-ttl04 {
@@ -106,6 +113,8 @@
     li {
         @include li-btn;
         width: 95px;
+        height: 35px;
+        line-height: 35px;
 
         .fa-angle-double-left {
             @include link-text-fa;
@@ -121,6 +130,7 @@
             text-decoration: none;
             display: inline-block;
             color: $font-color;
+            height: 35px;
             line-height: 35px;
             display: inline-block;
             width: 100%;
@@ -147,12 +157,13 @@
     }
 }
 
-
 @include pc {
-
     .single-page-sec {
         width: 900px;
         margin: 0 auto;
         margin-bottom: 50px;
+    }
+    .page-link {
+        margin-top: 70px;
     }
 }
