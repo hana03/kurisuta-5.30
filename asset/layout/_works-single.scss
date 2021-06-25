@@ -14,8 +14,9 @@
     }
 }
 
-.bg-color {
+.work-bg-color {
     background-color: #f1f0f0;
+
 
     .inner-main {
         padding: 10px;
@@ -25,13 +26,13 @@
             display: flex;
             margin: 20px 0;
 
-
             li {
                 padding-right: 10px;
 
                 a {
                     @include link-text-a;
-                    .fa-home{
+
+                    .fa-home {
                         margin-right: 3px
                     }
 
@@ -69,7 +70,6 @@
                     .works-text {
                         padding: 20px;
                         background-color: $white;
-                        // margin-bottom: 20px;
                         @include main-text;
                     }
 
@@ -88,7 +88,6 @@
 }
 
 @include tb {
-
     .shingle-key-visual {
         padding: 125px 0;
         margin-bottom: 20px;
@@ -98,13 +97,9 @@
         }
     }
 
-    .bg-color {
+    .work-bg-color {
         .inner-main {
             margin: 0;
-
-            .works-sec {
-                flex-direction: row;
-            }
 
             .works-sec {
                 flex-direction: row;
@@ -112,6 +107,7 @@
 
                 .works-list {
                     margin-right: 20px;
+                    width: 33%;
 
                     &:last-child {
                         margin-right: 0;
@@ -132,7 +128,7 @@
         }
     }
 
-    .bg-color {
+    .work-bg-color {
         max-width: 1100px;
         margin: 0 auto;
         margin-bottom: 20px;
@@ -140,6 +136,10 @@
         .inner-main {
             width: 900px;
             margin: 0 auto;
+
+            .nav-list {
+                margin: 20px 0 40px 0;
+            }
         }
     }
 }
