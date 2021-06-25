@@ -2,17 +2,16 @@
 
 @import "asset/libs/_mixin.scss";
 
+.bg-color {
+    background-color: $white;
+}
+
 .single-service-sec {
+padding-bottom: 80px;
     .service-sec {
-        .single-main-ttl {
-            margin-top: 80px;
-            @include single-main-ttl;
-            padding: 10px 0;
-            border-bottom: 2px solid $ttl-color;
-            margin-bottom: 20px;
-            padding-left: 10px;
-            color: black;
-        }
+        margin-top: 80px;
+        border-top: 2px solid rgb(209, 208, 207);
+        padding-top: 50px;
 
         .service-flex {
             display: flex;
@@ -25,7 +24,6 @@
             .sev-right {
                 height: 300px;
                 box-sizing: border-box;
-                // box-shadow: 12px 12px 2px 1px rgba(61, 61, 63, 0.2);
                 background-color: $white;
                 display: flex;
                 flex-direction: column;
@@ -51,7 +49,8 @@
                     @include main-text;
                 }
             }
-            .main-ba-bottom{
+
+            .main-ba-bottom {
                 margin-top: 100px;
             }
         }
@@ -68,12 +67,8 @@
                 img {
                     width: 48%;
                 }
-
-                // .sev-right {
-                //     width: 48%;
-                // }
-
             }
+
             .service-reverse {
                 flex-direction: row-reverse;
             }
