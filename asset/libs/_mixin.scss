@@ -7,11 +7,9 @@ $btn-color:#F7D43F;
 $syadow:#1B1310;
 $green:#5e9b84;
 $bk-color :#6d6969;
-// $works-text:#141414;
 
 @mixin main-ttl {
   font-size: 3.6rem;
-  // font-size: 6rem;
   font-style: italic;
   line-height: 4.0em;
   letter-spacing: 0.05em;
@@ -39,7 +37,6 @@ $bk-color :#6d6969;
   font-size: 1.6rem;
   line-height: 1.8em;
   letter-spacing: 0.05em;
-  // margin-bottom: 40px;
   text-align: left;
 }
 
@@ -113,7 +110,6 @@ $bk-color :#6d6969;
 }
 
 @mixin single-main-ttl{
-  // margin: 73px 0 15px;
   font-size: 4.0rem;
   line-height: 4.0rem;
   letter-spacing: 0.05em;
@@ -136,7 +132,6 @@ $bk-color :#6d6969;
   letter-spacing: 0.05em;
   color:$ttl-color;
   background-color: #E4E2DB;
-  // padding: 50px 0 3px 0;
   margin:40px 0 14px 0;
   padding:6px 0 6px 3px;
 }
@@ -148,7 +143,6 @@ $bk-color :#6d6969;
   color:$ttl-color;
   border-left:solid 4px $ttl-color ;
   padding: 5px 0 5px 14px;
-  // margin-bottom: 10px;
   margin: 24px 0 12px 0;
 }
 
@@ -173,14 +167,9 @@ $bk-color :#6d6969;
 }
 
 @mixin li-btn{
-  width: 95px;
-  height: 32px;
   border: 1px solid $bk-color;
-  line-height: 32px;
   text-align: center;
 }
-
-
 
 @mixin pc {
   @media screen and (min-width:1200px) {
