@@ -13,6 +13,7 @@
 .main-ba-bottom {
     @include main-ba-bottom;
     text-align: right;
+    padding-bottom: 12px;
 
     &:nth-child(even) {
         text-align: left;
