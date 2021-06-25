@@ -20,7 +20,7 @@
             .header-logo {
                 a {
                     font-size: 2.4rem;
-                    color: white;
+                    color: $white;
                     font-style: italic;
                     text-decoration: none;
                     height: 60px;
@@ -30,7 +30,7 @@
 
             .fa-bars {
                 font-size: 2.6rem;
-                color: white;
+                color: $white;
                 position: absolute;
                 top: 16px;
                 right: 18px;
@@ -43,7 +43,7 @@
 
             .fa-times {
                 font-size: 2.6rem;
-                color: white;
+                color: $white;
                 position: absolute;
                 top: 16px;
                 right: 18px;
@@ -73,7 +73,6 @@
     .pc-nav-list {
         display: none;
     }
-
 }
 
 @include tb {
@@ -100,7 +99,7 @@
                     padding: 0 30px;
 
                     a {
-                        color: white;
+                        color: $white;
                         text-decoration: none;
                         height: 60px;
                         line-height: 60px;
