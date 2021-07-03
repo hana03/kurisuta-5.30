@@ -3,9 +3,12 @@
 @import "asset/libs/_mixin.scss";
 
 .service-wrapper {
+    .inner {
+        padding: 0 10px;
 
-    .main-ttl {
-        text-align: left;
+        .main-ttl {
+            text-align: left;
+        }
     }
 
     .service-sec {
@@ -19,6 +22,10 @@
 
             a {
                 @include service-list-a;
+
+                &:hover {
+                    background-color: rgba(19, 18, 18, 0.3);
+                }
             }
         }
 
@@ -28,6 +35,10 @@
 
             a {
                 @include service-list-a;
+
+                &:hover {
+                    background-color: rgba(19, 18, 18, 0.3);
+                }
             }
         }
 
@@ -37,10 +48,13 @@
 
             a {
                 @include service-list-a;
+
+                &:hover {
+                    background-color: rgba(19, 18, 18, 0.3);
+                }
             }
         }
     }
-  
 }
 
 @include tb {
@@ -57,6 +71,7 @@
 
         .service-sec {
             flex-direction: row;
+            margin-bottom: 100px;
         }
     }
 }
