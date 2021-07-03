@@ -42,6 +42,7 @@
                     .works-text {
                         padding: 20px;
                         background-color: $white;
+                        height: 100px;
                         @include main-text;
                     }
 
@@ -85,21 +86,22 @@
             .works-sec {
                 flex-direction: row;
 
-                .works-list {
-                    width: 33%;
-                    margin-right: 20px;
-                    margin-bottom: 0px;
-
-                    &:last-of-type {
-                        margin-right: 0;
-                    }
-                }
             }
 
-            .works-btn {
-                a {
-                    width: 320px;
+            .works-list {
+                width: 33%;
+                margin-right: 20px;
+                margin-bottom: 0px;
+
+                &:last-of-type {
+                    margin-right: 0;
                 }
+            }
+        }
+
+        .works-btn {
+            a {
+                width: 320px;
             }
         }
     }
