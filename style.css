@@ -828,20 +828,25 @@ input, select {
   border-radius: 30px;
 }
 
+.inner-main .contact-btn a:hover {
+  opacity: 0.7;
+}
+
 @media screen and (min-width: 900px) {
-  .inner-main .single-contact-wrapper {
+  .inner-main .single-contact-wrapper .sub-ttl {
+    margin-bottom: 20px;
     margin: 0 auto;
   }
-  .inner-main .single-contact-wrapper .check-list {
+  .inner-main .single-contact-wrapper .sub-ttl .check-list {
     flex-direction: row;
   }
-  .inner-main .single-contact-wrapper .check-list li {
+  .inner-main .single-contact-wrapper .sub-ttl .check-list li {
     margin-bottom: 0;
   }
-  .inner-main .single-contact-wrapper textarea {
+  .inner-main .single-contact-wrapper .sub-ttl textarea {
     width: 96%;
   }
-  .inner-main .contact-btn a {
+  .inner-main .single-contact-wrapper .contact-btn a {
     width: 320px;
   }
 }

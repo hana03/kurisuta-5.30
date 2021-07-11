@@ -5,17 +5,19 @@
 .inner-main {
     .single-contact-wrapper {
         margin: 0 20px;
-        .sub-ttl{
+
+        .sub-ttl {
             @include sub-ttl;
             margin-bottom: 10px;
         }
 
-        .check-list{
+        .check-list {
             list-style-type: none;
             display: flex;
             flex-direction: column;
             margin-bottom: 20px;
-            li{
+
+            li {
                 padding-right: 10px;
                 margin-bottom: 10px;
             }
@@ -61,6 +63,10 @@
 
         a {
             @include btn;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }
@@ -68,23 +74,28 @@
 @include tb {
     .inner-main {
         .single-contact-wrapper {
-            // width: 800px;
-            margin: 0 auto;
-            .check-list{
-            flex-direction: row;
-                li{
-                    margin-bottom: 0;
+
+            .sub-ttl {
+                margin-bottom: 20px;
+                margin: 0 auto;
+
+                .check-list {
+                    flex-direction: row;
+
+                    li {
+                        margin-bottom: 0;
+                    }
+                }
+
+                textarea {
+                    width: 96%;
                 }
             }
 
-            textarea {
-                width: 96%;
-            }
-        }
-
-        .contact-btn {
-            a {
-                width: 320px;
+            .contact-btn {
+                a {
+                    width: 320px;
+                }
             }
         }
     }
