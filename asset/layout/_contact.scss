@@ -6,49 +6,78 @@
     background-image: url(imge/contact-bgi@2x.jpg);
     background-position: center;
     background-size: cover;
-
+    max-width: 100%;
     padding-bottom: 20px;
+
     .inner {
-        margin: 0 10px;
+        padding: 0 10px;
         text-align: center;
 
         .main-ttl {
             text-align: right;
-            color: white;
+            color: $white;
 
             &:after {
-                background-color: white;
-                width: 200px;
+                background-color: $white;
             }
         }
 
         .contact-btn {
             a {
                 @include btn;
+                width: 80%;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
         }
 
         .sub-ttl {
             @include sub-ttl;
-            color: white;
+            color: $white;
+            margin-top: 60px;
         }
     }
-    .main-ba-bottom{
+
+    .main-ba-bottom {
         text-align: left;
     }
 }
+
 @include tb {
-    .contact-wrapper{
+    .contact-wrapper {
 
         .inner {
             max-width: 1000px;
             margin: 0 auto;
-        }
-        
-        .inner-pc {
-            max-width: 1200px;
-            margin: 0 auto;
+
+            .main-ttl {
+                text-align: right;
+                color: $white;
+
+                &:after {
+                    background-color: $white;
+                    width: 200px;
+                }
+            }
+
+            .sub-ttl {
+                font-size: 3.0rem;
+            }
+
+            .contact-btn {
+                a {
+                    width: 320px;
+                }
+            }
         }
     }
-        
+}
+
+@include pc {
+    .inner-pc {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }

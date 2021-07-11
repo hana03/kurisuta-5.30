@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.bg-color {
+    background-color: $white;
+}
+
+.single-service-sec {
+padding-bottom: 80px;
+    .service-sec {
+        margin-top: 80px;
+        border-top: 2px solid rgb(209, 208, 207);
+        padding-top: 50px;
+
+        .service-flex {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            .sev-right {
+                height: 300px;
+                box-sizing: border-box;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+
+                .box-ttl {
+                    display: flex;
+
+                    .top-span-no {
+                        font-size: 5.0rem;
+                        color: skyblue;
+                        margin-bottom: 30px;
+                    }
+
+                    .top-span-ttl {
+                        font-size: 5.0rem;
+                        color: $font-color;
+                        margin: 0 0 30px 30px;
+                    }
+                }
+
+                .main-text {
+                    @include main-text;
+                }
+            }
+
+            .main-ba-bottom {
+                margin-top: 100px;
+            }
+        }
+    }
+}
+
+@include tb {
+    .single-service-sec {
+        .service-sec {
+            .service-flex {
+                flex-direction: row;
+                justify-content: space-between;
+
+                img {
+                    width: 48%;
+                }
+            }
+
+            .service-reverse {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+}
